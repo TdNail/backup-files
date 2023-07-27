@@ -49,10 +49,10 @@ def backup_files(source_dir, destination_dir, log_file, log_dir, max_backups=5):
         print(f"Erro ao realizar o backup: {e}")
 
 
-if __name__ == "__main__":
-    source_directory = r"C:\Users\Nailson\Desktop\Backup teste python"
-    destination_directory = r"C:\Users\Nailson\Desktop\Destino backup teste"
-    log_directory = r"C:\Users\Nailson\Desktop\Destino backup teste\Logs"
-    log_filename = "backup_log"
 
-    backup_files(source_directory, destination_directory, log_filename, log_directory)
+source_directory = r"C:\Users\Nailson\Desktop\Backup teste python"
+destination_directory = r"C:\Users\Nailson\Desktop\Destino backup teste"
+log_directory = r"C:\Users\Nailson\Desktop\Destino backup teste\Logs"
+log_filename = "backup_log"
+
+backup_files(source_directory, destination_directory, log_filename, log_directory)
